@@ -1,83 +1,30 @@
-# Web Typography, 2020/2021
+# Web Typography, 2022/2023
 
-Als je doof bent, of als je om een andere reden geen geluid kunt horen, dan mis je veel informatie als je een film kijkt. Knisperende voetstappen, langzaam aanzwellende muziek, nerveus getik op een deur, je hoort het natuurlijk allemaal niet. Nu bestaat er zoiets als *closed caption*, wat een type ondertiteling is waarbij ook dingen als omgevingsgeluiden en de muziek beschreven worden. Hierdoor krijgt een kijker die informatie wel binnen.
-
-Alleen wordt die auditieve informatie nogal neutraal beschreven. Het geluid van huilend persoon zou bijvoorbeeld beschreven kunnen worden als *snikgeluid op de achtergrond*. En iemand die lacht zou geschreven kunnen worden als *iemand lacht.* Heel neutraal, bijna zakelijk, en bovendien allebei in precies hetzelfde neutrale lettertype. Terwijl het toch echt over twee heel verschillende emoties gaat. 
-
-Dat kan visueel sterker. 
-
-En dat gaan jullie doen.
 
 ## Leerdoelen
 
-- Je kan de kennis over vormgeving die je hebt opgedaan tijdens de minor technisch toepassen met behulp van CSS
-- Je kan verborgen nuance uit een audiotrack overtuigend vertalen naar visuele (typografische) beelden
-- Je kan je typografische keuzes onderbouwen.
-- Je hebt de exclusive design principles gebruikt.
+- leren designen met de exlusive design regels
+- visueel coderen
+- veel animaties leren toevoegen
 
 ## Oplevering
 
-Je levert een werkende versie op, gemaakt met HTML, CSS en JavaScript. Deze staat op Github. In een duidelijke readme documenteer en onderbouw je je ontwerpkeuzes. Je developmentgeschiedenis is terug te vinden op GitHub.
+in de het zip-bestand op dlo heb ik een screen recording van de eindopdracht en heb ik een zipje van de code en dergelijk
 
-Je levert ook een *screen recording* met audio op van je fragment. Dit is een video van de definitieve versie, gemaakt van jouw browserscherm.
+## onderbouwing
 
-De beoordeling is mondeling en volgt [de rubric uit het beoordelingsformulier](web-typografie-beoordeling.pdf).
+Toen ik het fragment voor het eerst bekeek kreeg ik gelijk al veel inspiratie. Het is qua geluid best sterk en draagt veel bij aan de scene. De alarmen en het dialoog vormen samen een sterk punt van deze scene. Daarvoor heb ik gekozen om de geluiden en het dialoog een herhalend gevoel te geven. Hierdoor weet de kijker die het zonder geluid kijkt dat er een bepaalde hierarchie in de scene zit. Verschil in ranks van de 'robot' en de persoon die interviewt. 
 
-## Typografische restricties
+De geluiden ben ik gegaan voor veel ronde vormen. Dit zie je vaakt in space achtige settings terug komen. Ronde vormen met veel uitloop naar niks. hierdoor krijg je een fade rond de randjes. In het begin lukte het niet helemaal om de animaties van links naar rechts te maken. De before en afters werkte niet helemaal mee maar dat probleem heb ik verlopen door het te vragen aan een van mijn studie genootjes. 
 
-Je *moet* een van deze twee opties kiezen, en je keuze moet je onderbouwen. In je readme staat een uitleg over je overwegingen om de ene of de andere restrictie te kiezen.
+Wanneer de hoge pieptoon aan de beurt was had ik geen idee hoe ik het moest vormgeven. ik heb meerdere dingen geprobeert en het lukte ook niet echt om hem te timen. In de les heb ik gevraagd wat ik hieraan kon doen om het nog vervelender te maken. Dit kon door de flicker animatie langzaam op te laten lopen. Dit heb ik dan ook toegevoegd. Door de opbouw met een cubic bezier kon ik makkelijk een langzaam starten naar snel verlopende flits maken. en vervolgens deze animatie te herhalen werd het vervelend.
 
-### Optie 1: Systeemfont
+### Font keuze: Brenner
 
-De eerste optie is dat je gebruik maakt van het zogenaamde *systeemfont* van degene die naar jouw werk kijkt. Dit font verschilt per operating system, en het verschilt soms zelfs per versie van het operating system. Het is ook aan te passen door de gebruiker zelf. 
-
-Je hebt dus geen controle over welk lettertype er precies gebruikt wordt. Het levert dus een onzeker, en beperkt typografisch palet op. Je hebt geen *light* versies, of *extrabold*. En ook geen serif en sans-serif versie van dezelfde familie. In dit geval heb je alleen de beschikking over normal, **bold** en _italic_. Dit heeft natuurlijk ook zijn voordelen!
-
-### Optie 2: Brenner
-
-Je kan er ook voor kiezen om gebruik te maken van de complete Brenner familie. Dit is een zeer uitgebreid en uiterst flexibel font. [Hier kan je je verdiepen in dit font](https://www.typotheque.com/blog/brenner_an_unusual_typeface_family_with_distinct_voices). Als je kiest voor dit font dan heb je de beschikking over een *sans serif*, een *condensed*, een *serif*, een *monotype*, een *slab*, een *display* en een *script* versie. En veel van deze versies hebben varianten van *light* tot *bold*, en allemaal zowel *bold* als *italic*.
-
-Met Brenner zijn er natuurlijk veel en veel meer mogelijkheden dan met systeemfonts. Dat kan zowel een voordeel als een nadeel zijn. 
-
-Voor een overzicht, zie [de brenner.pdf](brenner.pdf).
-
-## Het fragment
-
-Ik heb een fragment voorbereid. Het gaat om twee scenes uit *Blade Runner 2049*. De captions staan in de HTML, en ze verschijnen in sync met de video. [Kijk maar](closed-captions/index.html).
+Waarom ben ik gegaan voor Brenner? Brenner had meer opties dan het systeemfont. Hierdoor wist ik gelijk dat er meer hierarchie in de stemmen gebracht kon worden door de verschillende keuzes in het brenner font. Zo kon ik de 'robot' makkelijk vormgeven en de interviewer ook een ander font geven. De 'robot' krijgt een mono en de brenner een sans voor zijn eentonige stem. 
 
 ### De captions
 
-De captions staan in de html, in het bestand index.html. Je kan aan elke paragraaf eventueel een of meer classes toevoegen. Bijvoorbeeld `voice1` of `voice2 soft`. Classes voeg je handmatig toe in de html.
+Voor de caption ben ik gegaan om de titels net als traditioneel in het midden van de film te zetten. Dit vond ik erbij passen omdat het fijn leest en je aandacht op de film houdt. Door toch nog wat hierarchie te doen in het fragment heb ik verschillende captions op een andere plek te zetten. Hierdoor onstaat er een bepaalde flow waarin de kijker kijkt. Je kan dus verwachten waar iets komt. De 'fuck-off skin job' was een geval apart en is daarom ook op een andere plek te vinden dan de ondertiteling daarvoor. Door interlinked, interlinked, links en rechts in het scherm te zetten weet je wie wat zegt en is dit heel voorspelbaar.
 
-Met JavaScript worden er een paar dingen extra gedaan: 
 
-- er wordt aan elke paragraaf een unieke class toegevoegd (`p0`, `p1`, etc)
-- Elk woord wordt in een aparte `span` gezet. Hierdoor kan je elk woord apart stylen, en eventueel ook [na elkaar laten verschijnen](https://github.com/cmda-minor-vid/web-typography-18-19/blob/master/closed-captions/css.css#L41).
-
-### Tijdens het afspelen
-
-Tijdens het afspeelen wordt er een class `on` op de caption gezet als hij moet verschijnen, en een class `off` als hij klaar is. *Zowel class `on` als class `off` blijft op de caption staan!*
-
-De timimg van de captions kan je aanpassen in [closed-captions/captions.js](closed-captions/captions.js).
-
-Er verschijnen ook classes op de body op momenten dat er geluiden worden afgespeeld, zoals `sound1` en `sound2`. Je kan geluiden toevoegen in [closed-captions/sounds.js](closed-captions/sounds.js).
-
-*let op,* de geluiden zijn niet compleet, dit zal je zelf moeten aanvullen.
-
-## Een eigen fragment (afgeraden, uitgebreide onderbouwing is nodig)
-
-Je kan er ook voor kiezen om een eigen, *beter* fragment te gebruiken. Dit wordt afgeraden. De tijd die je besteedt aan het zoeken naar dat fragment kan je beter besteden aan het werken aan de opdracht. Bovendien blijkt dat er vaak fragmenten worden gekozen die niet goed voldoen aan de opdracht. Als je een ander fragment kiest dan *moet* je dit goed onderbouwd voorleggen aan je docent. De deadline hiervoor is vrijdagochtend in de eerste week.
-
-### Waar moet je op letten bij het kiezen van een eigen fragment.
-Lees de opdracht nog eens goed door. Waar gaat het ook al weer precies om? 
-
-Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vragen in elk geval beantwoorden:
-
-- Welke informatie zit er in de audio die echt niet zichtbaar is?
-- Welke rol speelt de audio in het fragment?
-- Werkt de scene nog zonder geluid?
-- Waarom is dit fragment beter dan het aangeboden fragment?
-
-Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
-
-Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
