@@ -779,7 +779,7 @@ Sounds.
 	content:"";
 	height: 100vh;
 	width:50vw;
-	background: radial-gradient(circle, rgba(30, 14, 14, 0.848) 20%, rgba(255,0,0,0) 89%);
+	background: radial-gradient(circle, rgba(142, 60, 60, 0.848) 20%, rgba(137, 55, 55, 0) 89%);
 	position: fixed;
 	animation-name: moveRight;
 	animation-duration: 2s;
@@ -816,7 +816,7 @@ Sounds.
 	content:"";
 	height: 100vh;
 	width:50vw;
-	background: radial-gradient(circle, rgba(30, 14, 14, 0.848) 20%, rgba(255,0,0,0) 89%);
+	background: radial-gradient(circle, rgba(122, 52, 52, 0.848) 20%, rgba(255,0,0,0) 89%);
 	position: fixed;
 	animation-name: moveRight;
 	animation-duration: 2s;
@@ -857,12 +857,12 @@ Sounds.
 	background: linear-gradient(
 		to bottom,
 		#000,
-		#000 50%,
+		#c7c7c7 10%,
+		#f66d6d 30%,
 		#222 50%,
 		#222 
 		);
 
-	background-size: 10% 4px;
   	animation: flickerAnimation 1s 20,
 	flickerAnimation1 .5s 100 5s,
 	flickerAnimation2 .4s 100 10s,
@@ -872,27 +872,75 @@ Sounds.
 	position: fixed;
 }
 
-.sound9 {
-	content:"";
-	height: 100vh;
-	width:100vw;
-	background: linear-gradient(
-		to bottom,
-		#ff1313,
-		#ff1313 50%,
-		#c21313 50%,
-		#c21313 
-		);
-
-	background-size: 10% 4px;
-  	animation: flickerAnimation 1s 20,
-	flickerAnimation1 1s 100 5s,
-	flickerAnimation2 1s 100 10s,
-	flickerAnimation3 1s 100 20s,
-	flickerAnimation4 1s 100 30s,
-	flickerAnimation5 1s 100 40s;
-	position: fixed;
+.sound10 #video-mask {
+	animation: bright 1s 20,
+	bright1 .5s 100 5s,
+	bright2 .4s 100 10s,
+	bright3 .3s 100 20s,
+	bright4 200ms 100 30s,
+	bright5 100ms 100 40s;
 }
+
+@keyframes bright {
+	0% {
+		box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+	  }
+	  50% {
+		box-shadow: 10px 11px 284px -66px rgba(235,70,70,0.61);
+	  }
+	  100% {
+		box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+	  }
+	}
+
+	@keyframes bright2 {
+		0% {
+			box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+		  }
+		  50% {
+			box-shadow: 10px 11px 284px -66px rgba(235,70,70,0.61);
+		  }
+		  100% {
+			box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+		  }
+		}
+
+		@keyframes bright3 {
+			0% {
+				box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+			  }
+			  50% {
+				box-shadow: 10px 11px 284px -66px rgba(235,70,70,0.61);
+			  }
+			  100% {
+				box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+			  }
+			}
+	
+		@keyframes bright4 {
+			0% {
+				box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+			  }
+			  50% {
+				box-shadow: 10px 11px 284px -66px rgba(235,70,70,0.61);
+			  }
+			  100% {
+				box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+			  }
+			}
+		
+			@keyframes bright5 {
+				0% {
+					box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+				  }
+				  50% {
+					box-shadow: 10px 11px 284px -66px rgba(235,70,70,0.61);
+				  }
+				  100% {
+					box-shadow: 10px 11px 284px 61px rgba(235,70,70,0.61);
+				  }
+				}
+
 
 .sound12::before {
 	content: "";
@@ -902,6 +950,13 @@ Sounds.
 	background: linear-gradient(to right, #262829, #283048); 
 }
 
+.sound12 #video-mask {
+	content: "";
+	background: none;
+	animation: none;
+	box-shadow: none;
+	background: linear-gradient(to right, #262829, #283048); 
+}
 
 .sound12 {
 	animation: none;
@@ -910,18 +965,7 @@ Sounds.
 	background: linear-gradient(to right, #262829, #283048); 
 }
 
-/* .sound9 { 
-	position: absolute;
-	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-	background-size: 1800% 1800%;
-	animation: rainbow 1s infinite;
-	}
-	
-	@keyframes rainbow { 
-	0%{background-position:0% 82%}
-	50%{background-position:100% 19%}
-	100%{background-position:0% 82%}
-	} */
+
 
 
 /* 86 in .5s */
@@ -1046,7 +1090,7 @@ body {
 	margin: 0;
 	justify-content: center;
 	/* background: #283048;   */
-	background: linear-gradient(to right, #262829, #283048); 
+	background: linear-gradient(to right, #2a2a2a, #283048); 
 
 }
 #video-container {
